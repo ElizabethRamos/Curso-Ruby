@@ -23,11 +23,27 @@ while boolean == true
   puts num
   num += 1
 end
+ 
+puts "-" * 10
 
 def menu
   puts "Digite 1 para escrever seu nome, ou digite 0 para sair"
 end
 
+# Um jeito de fazer...
+menu
+choose_option = gets.to_i
+
+begin
+    puts "Digite seu nome: "
+    name = gets.chomp
+    puts "Seu nome é #{name}"
+    menu
+    choose_option = gets.to_i
+end while choose_option != 0
+puts "Até"
+
+# Outro jeito de fazer..
 menu
 choose_option = gets.to_i
 
