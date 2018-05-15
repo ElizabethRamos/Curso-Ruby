@@ -1,11 +1,13 @@
 # Sintaxe while
 count = 1
-
 while count < 5
   puts "count = #{count}"
   count += 1 # incrementa a variavel
 end
 
+puts 'while em cima, do while embaixo'
+
+count = 1
 begin
   puts "count = #{count}"
   count += 1
@@ -21,3 +23,19 @@ while boolean == true
   puts num
   num += 1
 end
+
+
+puts "Digite 1 para escrever seu nome, ou digite 0 para sair"
+
+choose_option = gets.to_i
+
+while choose_option != 0
+  if choose_option == 1
+    puts "Digite seu nome: "
+    name = gets.chomp
+    puts "Seu nome é #{name}"
+  end
+  puts "Digite 1 para escrever seu nome, ou digite 0 para sair"
+  choose_option = gets.to_i
+end
+puts "Até!"
