@@ -1,3 +1,6 @@
+# Crie um loop onde exista a pergunta se o usuário quer adicionar novos membros na equipe até que o usuário responda não, caso sim, permita o usuário inserir o nome.
+# Ao final use um each para listar o nome de cada membro da equipe.
+
 ESCREVER_NOME = 1
 VER_NOMES = 2
 
