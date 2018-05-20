@@ -1,5 +1,6 @@
 require_relative 'Person'
 require_relative 'Athlete'
+require_relative 'Profession'
 
 person1 = Person.new('Eliza', 29, 1.70, 'Female')
 person1.talk
@@ -15,3 +16,13 @@ athlete.introduce
 athlete.set_sport('Voley')
 athlete.my_sport
 athlete.sum(5, 7)
+
+puts '--' * 20
+
+profession = Profession.new('Eliza', 29, 1.70, 'Female', 'Software developer', 'Write good code')
+profession.introduce
+profession.my_profession
+profession.my_duties
+profession.set_profession('Software Developer')
+profession.set_duties('Write good code')
+
