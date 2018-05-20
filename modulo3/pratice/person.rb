@@ -1,4 +1,4 @@
-module DoSum
+module MathOperations
   def sum(a, b)
     puts a + b
   end
@@ -6,7 +6,7 @@ end
 
 class Person
 
-  include DoSum
+  include MathOperations
   
   def initialize(name, age, height, sex)
     @name = name
